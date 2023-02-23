@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Old+Standard+TT&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+	<title>Q3 | Seatwork 2</title>
+
+	<style type="text/css">
+
+		h2,th{
+			text-align: center;
+      font-family: 'Cinzel', serif;
+		}
+
+    h3{
+      font-family: 'Cinzel', serif;
+    }
+
+
+		img{
+			width: 200px;
+			height: 300px;
+			object-fit: cover;
+		}
+
+
+    th{
+      color: white;
+    }
+
+    p{
+      font-family: 'Old Standard TT', serif;
+    }
+		
+body {
+  transition: background-color .5s;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #eee;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #dbdbdb;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+#Author{background-color: blue;
+padding-top: 5px;
+padding-left: 5px;
+padding-bottom: 5px;
+font-size: 14px;
+color: whitesmoke;
+}
+#Title{background-color: green;
+padding-top: 5px;
+padding-left: 5px;
+padding-bottom: 5px;
+font-size: 14px;
+color: whitesmoke;
+}
+#Publisher{background-color: orange;
+padding-top: 5px;
+padding-left: 5px;
+padding-bottom: 5px;
+font-size: 14px;
+color: whitesmoke;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+	</style>
+
+
+
+</head>
+<body>
+
+<div class="sidenav" id="mySidenav">
+  <a href="javascript:void(0)" style="font-size:36px;cursor:pointer" class="closebtn" onclick="closeNav()">&times;</a>
+  <br>
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <ul class="w3-ul" id="myList"  style="width:98%">
+    
+    <h6 id="Author">Author</h6>
+        <li class="list-group-item">Andres Cristobal Cruz</li>
+        <li class="list-group-item">Annatte Acacio Flores</li>
+        <li class="list-group-item">Cyan Abad-Jugo</li>
+        <li class="list-group-item">Eugene Evasco</li>
+        <li class="list-group-item">Ramon Muzones</li>
+  
+    <h6 id="Title">Title</h6>
+        <li class="list-group-item">Anina ng mga Alon</li>
+        <li class="list-group-item">Ang Tundo Man Ay Langit Din</li>
+        <li class="list-group-item">Margosatubig: The Story of Salagunting</li>
+        <li class="list-group-item">Mga Tala sa Dagat</li>
+        <li class="list-group-item">Salingkit</li>
+    <h6 id="Publisher">Publisher</h6>
+        <li class="list-group-item">Adarna House</li>
+        <li class="list-group-item">Ateneo de Manila University Press</li>
+        <li class="list-group-item">Anvil Publishing</li>
+
+   </ul>  
+</div>
+
+<div id="main">
+
+<div class="container" style="max-width:100%" style="max-height:100%">
+
+      <h3>Ang Kastilyo ng Aklatan</h3>
+      <hr>
+      <span style="font-size:22px;cursor:pointer" onclick="openNav()">&#9776; Search</span>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+   
+    <div class="carousel-inner" style="height: 360px;">
+
+      <div class="item active">
+        <img src="https://th.bing.com/th/id/OIP.ewG34-zuE9pnPMUxFNkyygHaCb?pid=ImgDet&rs=1" alt="Books" style="width:100%;">
+        <div class="carousel-caption">
+          <h2>Explore the Wonderful World of Books</h2>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://www.trastienda.com.sv/wp-content/uploads/2020/01/Acerca-de-mi-Trastienda-El-Salvador-Creacion-de-contenidos-e1579662496587.jpg" alt="Authors" style="width:100%;">
+        <div class="carousel-caption">
+          <h2>Written by World Class Filipino Authors</h2>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="https://eslteenstuff.com/wp-content/uploads/2014/02/banner-books.jpg" alt="Published" style="width:100%;">
+        <div class="carousel-caption">
+          <h2>Published in the Philippines</h2>
+        </div>
+      </div>
+
+  
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<br>
+
+  <table class="table table-striped table-active">
+<thead>
+
+  <tr>
+    <th scope="col" class="bg-danger">Mga Tala sa Dagat</th>
+    <hr>
+    <th scope="col" class="bg-danger">Anina ng mga Alon</th>
+    <th scope="col" class="bg-danger">Salingkit</th>
+    <th scope="col" class="bg-danger">Margosatubig: The Story of Salagunting</th>
+    <th scope="col" class="bg-danger">Ang Tundo Man Ay Langit Din</th>
+  </tr>  
+</thead>
+
+<tbody>
+  <tr>
+    <th scope="row"><img src="https://cdn.shopify.com/s/files/1/0080/3546/7343/products/MgaTalasaDagat_311x437.png?v=1599602789" class="rounded">Annatte Acacio Flores</th>
+    <th scope="row"><img src="https://images-na.ssl-images-amazon.com/images/I/51yiL1yxQ7L._SY291_BO1,204,203,200_QL40_ML2_.jpg" class="rounded"></th>
+    <th scope="row"><img src="https://images-na.ssl-images-amazon.com/images/I/51EVACc%2B2EL._SY346_.jpg" class="rounded"></th>
+    <th scope="row"><img src="https://unipress.ateneo.edu/sites/default/files/styles/new_book/public/covers_margosatubig_the_story_of_salagunting_by_ramon_l_muzones.jpg?itok=yc4Qo0AI" class="rounded"></th>
+    <th scope="row"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1275443942i/8358495._UY200_.jpg" class="rounded"></th>
+  </tr>
+
+  <tr>
+  <td><p>Here we follow a boy who strives to be the best fisherman in town to continue his family legacy, his family whose fates are bounded by the sea. <br><br><br><br><br><br> Author: Annatte Acacio Flores</p></td>
+  <td><p>A young Badjao girl who has always treated the sea as a friend. But as she continues to grow more, social, family, and personal conflicts arise. How will she exactly defeat these with their current status? <br><br><br><br> Author: Eugene Evasco</p></td>
+  <td><p>The year 1986 deals with surprising additions to history. Kitty Eugenio's has it rough with her friends who talk behind her back, her mom outside of the country, and more arising problems. Can she solve and get through her problems during the year of People Power?<br><br> Author: Cyan Abad-Jugo </p></td>
+  <td><p>Salunting finds his state in Mindanao to be conquered by unruly leaders. He now has to fight and take back what was rightfully his and his people. <br><br><br><br><br><br> Author: Ramon Muzones</p></td>
+  <td><p>A detailed and huge difference of social background yet two individuals are too in love. How will the people see them then?<br><br><br><br><br><br><br>Author: Andres Cristobal Cruz </p></td>
+  </tr>
+
+  <tr>
+    <td><button type="submit" class="btn btn-danger" style="margin-top: 2px;">Download</button><button type="submit" class="btn btn-default" style="margin-top: 2px;">Read Now!</button></td>
+    <td><button type="submit" class="btn btn-danger" style="margin-top: 2px;">Download</button><button type="submit" class="btn btn-default" style="margin-top: 2px;">Read Now!</button></td>
+    <td><button type="submit" class="btn btn-danger" style="margin-top: 2px;">Download</button><button type="submit" class="btn btn-default" style="margin-top: 2px;">Read Now!</button></td>
+    <td><button type="submit" class="btn btn-danger" style="margin-top: 2px;">Download</button><button type="submit" class="btn btn-default" style="margin-top: 2px;">Read Now!</button></td>
+    <td><button type="submit" class="btn btn-danger" style="margin-top: 2px;">Download</button><button type="submit" class="btn btn-default" style="margin-top: 2px;">Read Now!</button></td>
+
+  </tr>
+</tbody>
+</table>
+</div>
+  </div>
+<script>
+
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+ 
+<!-(n.d.). Ang Tundo Man May Langit Din. Goodreads. https://www.goodreads.com/book/show/8358495-ang-tundo-man-may-langit-din
+   (n.d.). Ang Tundo Man May Langit Din. [Image]. Goodreads. https://www.goodreads.com/book/show/8358495-ang-tundo-man-may-langit-din
+
+   (n.d.). Margosatubig: The Story of Salagunting. Goodreads. https://www.goodreads.com/book/show/17163061-margosatubig
+   (n.d.). Margosatubig: The Story of Salagunting. [Image]. Goodreads. https://www.goodreads.com/book/show/17163061-margosatubig
+
+   (n.d.). Salingkit: a 1986 Diary. Goodreads. https://www.goodreads.com/book/show/15775271-salingkit
+   (n.d.). Salingkit: a 1986 Diary. [Image]. Goodreads. https://www.goodreads.com/book/show/15775271-salingkit
+
+   (n.d.). BOOK REVIEW: Anina ng mga Alon by Eugene Y. Evasco. https://acupofmouie.blogspot.com/2021/03/book-review-anina-ng-mga-alon-by-eugene.html
+   (n.d.). BOOK REVIEW: Anina ng mga Alon by Eugene Y. Evasco. [Image]. acupofmouie.blogspot.com. https://acupofmouie.blogspot.com/2021/03/book-review-anina-ng-mga-alon-by-eugene.html
+
+   (n.d.). Mga Tala sa Dagat. Adarna House. https://adarna.com.ph/collections/young-adult/products/mga-tala-sa-dagat
+   (n.d.). Mga Tala sa Dagat. [Image]. Adarna House. https://adarna.com.ph/collections/young-adult/products/mga-tala-sa-dagat
+
+   (n.d.). Books. [Image]. Trastienda. https://www.trastienda.com.sv/nosotros/
+   (n.d.). Books. [Image]. News. https://news.illinoisstate.edu/2018/05/ctlt-summer-reading-challenge-kicks-off-may-15/
+   (n.d.). Books. [Image]. Academy for Teaching and Learning Excellence. https://ualr.edu/atle/new-library/
+
+ Comments are not displayed in the browser-->
+ 
+
+</body>
+</html>
